@@ -1,6 +1,6 @@
 # Naukrigulf Scraper
 
-Extract structured data from [naukrigulf.com](https://naukrigulf.com) — naukrigulf.com - the Gulf-region job board covering UAE, Saudi Arabia, Qatar, Kuwait, Bahrain, and Oman. Structured salary and contact info, plus incremental change tracking for recurring runs.
+Extract structured job listings from [naukrigulf.com](https://naukrigulf.com) — the Gulf-region job board covering UAE, Saudi Arabia, Qatar, Kuwait, Bahrain, and Oman. Returns structured salary and contact info per listing, with incremental change tracking for recurring runs.
 
 **[Naukrigulf Scraper on Apify →](https://apify.com/blackfalcondata/naukrigulf-scraper)**
 
@@ -76,10 +76,11 @@ Each listing gets a content hash. On subsequent runs, only new or changed listin
 
 ## Known limitations
 
-<!-- WRITE: 4-6 honest limitations -->
-
-- <!-- WRITE: limitation 1 -->
-- <!-- WRITE: limitation 2 -->
+- Naukrigulf.com enforces rate limits on rapid sequential requests. The actor respects these automatically via built-in request throttling.
+- Contact fields (recruiter email, phone) are only present on a subset of listings — many employers mark them as hidden, in which case the corresponding `*Hidden` flag is set and the field returns null.
+- Salary data is self-reported by employers and often presented in ranges or marked confidential. Only publicly visible salary values are extracted.
+- Search results are limited to what Naukrigulf's search engine returns for a given keyword + location. Very broad queries may hit platform-side pagination caps.
+- Some detail fields (desired candidate, localities, industry) require detail enrichment (`includeDetails: true`). Disable for faster compact runs when only core fields are needed.
 
 ---
 

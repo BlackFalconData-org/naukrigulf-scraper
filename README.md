@@ -11,15 +11,33 @@ Extract structured job listings from [naukrigulf.com](https://naukrigulf.com) �
 
 
 
+
 **Search with filters** — Search by keyword and location.
+
+**Multiple input modes** — keyword search or direct job urls. Switch modes without re-scraping.
+
+**Direct URL mode** — Paste a list of listing URLs and fetch each one directly. Skips search — ideal for monitoring known IDs.
 
 **Detail enrichment** — Fetch full job descriptions, salary data, employer profiles, contact information for each listing.
 
 **Incremental mode** — Only get new or changed listings since your last run. Content hash per listing — no duplicates, no re-processing.
 
+**Change classification** — Track unchanged, expired, cross-run repost detection across runs. Build audit trails of how listings evolve over time.
+
+**Compact output** — Emit core fields only (AI-agent / MCP-friendly). Keeps response size small for LLM workflows.
+
+**Description truncation** — Cap description length per listing to control output size and cost.
+
+**Result cap** — Stop after N listings (up to 5.000). Set to 0 for the full catalog.
+
+**Export anywhere** — Download as JSON, CSV, or Excel. Stream via Apify API, webhooks, or integrations with Make, Zapier, Airbyte, Keboola.
+
+**Structured data** — Every listing returns the same schema with consistent field naming. All fields always present — `null` when unavailable, never omitted.
+
 ---
 
 ## Use cases
+
 
 
 
@@ -29,6 +47,18 @@ Integrate with your ETL pipeline to collect structured listings from naukrigulf.
 
 **Market research**
 Monitor listings, track trends, and analyze market dynamics with structured, deduplicated data from naukrigulf.com.
+
+**Change monitoring**
+Run daily or hourly in incremental mode to capture only new, updated, or expired listings. Perfect for price-tracking, churn analysis, and alerting pipelines.
+
+**Compensation benchmarking**
+Aggregate salary ranges across roles, industries, and locations on naukrigulf.com to inform pricing decisions, hiring plans, or candidate negotiations.
+
+**Lead generation**
+Extract employer contact details alongside listings to build outreach lists for recruiters, staffing agencies, or B2B sales teams.
+
+**AI / LLM training data**
+Structured JSON per listing is ready for RAG pipelines, embeddings, and agent workflows. Compact mode trims tokens for LLM context windows.
 
 ---
 
@@ -217,6 +247,7 @@ See the [actor on Apify](https://apify.com/blackfalcondata/naukrigulf-scraper?fp
 ---
 
 ## Related products by Black Falcon Data
+
 
 
 

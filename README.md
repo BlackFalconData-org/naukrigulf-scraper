@@ -9,6 +9,7 @@ Extract structured job listings from [naukrigulf.com](https://naukrigulf.com) �
 ## Key features
 
 
+
 **Search with filters** — Search by keyword and location.
 
 **Detail enrichment** — Fetch full job descriptions, salary data, employer profiles, contact information for each listing.
@@ -18,6 +19,7 @@ Extract structured job listings from [naukrigulf.com](https://naukrigulf.com) �
 ---
 
 ## Use cases
+
 
 
 **Data pipeline automation**
@@ -89,9 +91,12 @@ Each listing gets a content hash. On subsequent runs, only new or changed listin
 ## Related products by Black Falcon Data
 
 
-- [StepStone Scraper](https://github.com/BlackFalconData-org/stepstone-scraper) — Job listings from 18 European portals
-- [Indeed Job Scraper](https://github.com/BlackFalconData-org/indeed-job-scraper) — Indeed job listings with salary data
-- [Glassdoor Job Scraper](https://github.com/BlackFalconData-org/glassdoor-job-scraper) — Glassdoor listings with company ratings
+
+- [StepStone Scraper](https://apify.com/blackfalcondata/stepstone-scraper?fpr=1h3gvi) — Job listings from 18 European portals
+- [Indeed Job Scraper](https://apify.com/blackfalcondata/indeed-job-scraper?fpr=1h3gvi) — Indeed job listings with salary data
+- [Glassdoor Job Scraper](https://apify.com/blackfalcondata/glassdoor-job-scraper?fpr=1h3gvi) — Glassdoor listings with company ratings
+
+---
 
 
 ## Getting started with Apify

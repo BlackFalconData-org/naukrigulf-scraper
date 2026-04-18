@@ -2,11 +2,12 @@
 
 Extract structured job listings from [naukrigulf.com](https://naukrigulf.com) — the Gulf-region job board covering UAE, Saudi Arabia, Qatar, Kuwait, Bahrain, and Oman. Returns structured salary and contact info per listing, with incremental change tracking for recurring runs.
 
-**[Naukrigulf Scraper on Apify →](https://apify.com/blackfalcondata/naukrigulf-scraper)**
+**[Naukrigulf Jobs Scraper - Gulf Job Board on Apify →](https://apify.com/blackfalcondata/naukrigulf-scraper?fpr=1h3gvi)**
 
 ---
 
 ## Key features
+
 
 **Search with filters** — Search by keyword and location.
 
@@ -18,11 +19,12 @@ Extract structured job listings from [naukrigulf.com](https://naukrigulf.com) �
 
 ## Use cases
 
+
 **Data pipeline automation**
-Integrate with your ETL pipeline to collect structured listings from naukrigulf on a schedule. Export to CSV, JSON, or directly to your database. Use compact mode to control output size.
+Integrate with your ETL pipeline to collect structured listings from naukrigulf.com on a schedule. Export to CSV, JSON, or directly to your database. Use compact mode to control output size.
 
 **Market research**
-Monitor listings, track trends, and analyze market dynamics with structured, deduplicated data from naukrigulf.
+Monitor listings, track trends, and analyze market dynamics with structured, deduplicated data from naukrigulf.com.
 
 ---
 
@@ -86,9 +88,23 @@ Each listing gets a content hash. On subsequent runs, only new or changed listin
 
 ## Related products by Black Falcon Data
 
+
 - [StepStone Scraper](https://github.com/BlackFalconData-org/stepstone-scraper) — Job listings from 18 European portals
 - [Indeed Job Scraper](https://github.com/BlackFalconData-org/indeed-job-scraper) — Indeed job listings with salary data
 - [Glassdoor Job Scraper](https://github.com/BlackFalconData-org/glassdoor-job-scraper) — Glassdoor listings with company ratings
+
+
+## Getting started with Apify
+
+New to Apify? [Create a free account with $5 credit](https://console.apify.com/sign-up?fpr=1h3gvi) — no credit card required.
+
+1. [Sign up free](https://console.apify.com/sign-up?fpr=1h3gvi) — $5 credit included
+2. Open the actor and paste your input
+3. Click Start — results download as JSON, CSV, or Excel
+
+Need more volume? [See pricing](https://apify.com/pricing?fpr=1h3gvi).
+
+---
 
 ---
 

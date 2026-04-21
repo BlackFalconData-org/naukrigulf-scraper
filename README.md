@@ -13,6 +13,7 @@ Extract structured job listings from [naukrigulf.com](https://naukrigulf.com) â€
 
 
 
+
 **Search with filters** â€” Search by keyword and location.
 
 **Multiple input modes** â€” keyword search or direct job urls. Switch modes without re-scraping.
@@ -38,6 +39,7 @@ Extract structured job listings from [naukrigulf.com](https://naukrigulf.com) â€
 ---
 
 ## Use cases
+
 
 
 
@@ -249,6 +251,7 @@ See the [actor on Apify](https://apify.com/blackfalcondata/naukrigulf-scraper?fp
 ---
 
 ## Related products by Black Falcon Data
+
 
 
 
